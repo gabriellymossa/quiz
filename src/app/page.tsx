@@ -1,5 +1,9 @@
-export default function Home() {
-  return (
-    <div>...</div>
+"use client"
+
+const Page = () => {
+  return(
+    <div className=""></div>
   );
 }
+
+export default Page;

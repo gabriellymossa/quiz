@@ -2,10 +2,15 @@
 
 import { useState } from "react";
 import { questions } from "./data/questions";
+import { QuestionItem } from "./components/QuestionItem";
 
 const Page = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const title = 'Quiz de Culinária';
+
+  const handleAnswered = (answer: number) => {
+
+  }
 
 
   return(
@@ -14,11 +19,15 @@ const Page = () => {
         <div className="p-5 font-bold text-2xl border-b border-gray-300">{title}</div>
 
         <div className="p-5"> 
-          perguntas 
+          <QuestionItem 
+            question={questions[currentQuestion]}
+            count={currentQuestion + 1}
+            onAnswer={handleAnswered}
+          /> 
         </div>
 
         <div className="p-5 text-center border-t border-gray-300"> 
-          x de {questions.length} pergunta{questions.length === 1? '' : 's'}
+          {currentQuestion + 1} de {questions.length} pergunta{questions.length === 1? '' : 's'}
         </div>
 
       </div>

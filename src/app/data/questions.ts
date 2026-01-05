@@ -1,6 +1,6 @@
-import { Questions } from "../type/Question";
+import { Question } from "../type/Question";
 
-export const questions: Questions[] = [
+export const questions: Question[] = [
   {
     question: "Qual ingrediente não pode faltar?",
     options: [

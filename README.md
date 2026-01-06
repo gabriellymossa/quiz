@@ -62,4 +62,4 @@ Aplicação web simples de quiz focada em culinária, construída com **Next.js*
 
 ## Pessoas desenvolvedoras 👩‍💻👨‍💻
 
-- Gabrielly Gonçalves
+- Gabrielly Mossa

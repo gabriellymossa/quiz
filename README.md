@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quiz de Culinária 🍳
 
-## Getting Started
+**Descrição**
 
-First, run the development server:
+Aplicação web simples de quiz focada em culinária, construída com **Next.js**, **React** e **TypeScript**. Permite responder perguntas de múltipla escolha, receber feedback imediato (correta/incorreta), visualizar o resultado ao final e reiniciar o quiz.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades ✅
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Exibir perguntas com múltiplas opções
+- Permitir seleção de alternativa com feedback visual (verde/vermelho)
+- Avançar automaticamente para a próxima pergunta após resposta
+- Exibir resultados finais com indicação de quais respostas estavam corretas
+- Reiniciar o quiz para refazer as perguntas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Tecnologias utilizadas 🔧
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js** (v16.1.1)
+- **React** (v19)
+- **TypeScript**
+- **Tailwind CSS**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> As versões estão pegadas do arquivo `package.json`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Como rodar localmente ▶️
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+2. Rode a aplicação em modo desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+3. Para gerar build de produção:
+   ```bash
+   npm run build
+   ```
+4. Para iniciar a build em modo produção:
+   ```bash
+   npm run start
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Observação: use `npm run dev` (não `npm dev run`).
+
+---
+
+## Estrutura principal do projeto 📁
+
+- `src/app/page.tsx` — entrada e controle do quiz
+- `src/app/components/QuestionItem.tsx` — componente que renderiza cada pergunta
+- `src/app/components/Results.tsx` — componente que mostra o resultado final
+- `src/app/data/questions.ts` — dados das perguntas
+- `src/app/type/Question.ts` — tipagem `Question`
+
+---
+
+## Pessoas desenvolvedoras 👩‍💻👨‍💻
+
+- Gabrielly Gonçalves
